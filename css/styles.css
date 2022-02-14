@@ -37,6 +37,8 @@ ol {
 }
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 .container {
   width: 1200px;
@@ -56,6 +58,16 @@ img {
 .header-section {
   border-bottom: 1px solid #ececec;
 }
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 /* Logo */
 .logo {
   margin-right: 94px;
@@ -129,7 +141,7 @@ img {
 }
 /* Section hero */
 .hero {
-  padding-bottom: 94px;
+  padding: 200px 0px;
 
   background-color: var(--hero-footer-background-color);
   color: var(--hero-color);
@@ -192,13 +204,12 @@ img {
 .advantage-item:not(:last-child) {
   margin-right: 30px;
 }
-.description-item {
-  color: var(--secondary-text-color);
-}
 /* Offers section */
+.section-offer {
+  padding-bottom: 94px;
+}
 .flex-offers {
   display: flex;
-  padding-bottom: 92px;
 }
 .offer-img:not(:last-child) {
   margin-right: 30px;
@@ -221,22 +232,21 @@ img {
 }
 .flex-team {
   display: flex;
-  padding-bottom: 94px;
 }
-.member-photo {
-  margin-bottom: 30px;
-}
-.position {
-  padding-bottom: 30px;
+.member-card {
+  padding: 30px 0px;
 }
 .section-team {
   background-color: var(--team-background-color);
+  padding-bottom: 94px;
 }
 
 /* Footer */
 .footer-section {
   background-color: var(--hero-footer-background-color);
+  padding: 60px 0px;
 }
+
 .logo-footer {
   margin-bottom: 20px;
   display: inline-block;
@@ -249,9 +259,12 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+.footer-contact {
+  margin-bottom: 10px;
+}
 .adress {
   display: inline-block;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 
   font-style: normal;
   color: #ffffff;
@@ -262,7 +275,7 @@ img {
 }
 .list .email {
   display: inline-block;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .adress:hover,
 .adress:focus {
@@ -275,7 +288,6 @@ img {
   padding: 6px 22px;
   min-width: 145px;
   text-align: center;
-  margin-bottom: 50px;
   border-style: none;
   display: inline-block;
 
@@ -299,6 +311,9 @@ img {
   display: flex;
   justify-content: center;
 }
+.flex-button {
+  margin-bottom: 50px;
+}
 .flex-button:not(:last-child) {
   margin-right: 8px;
 }
@@ -306,10 +321,10 @@ img {
   padding: 0px 24px;
 }
 .flex-element .description-item {
-  padding: 0px 24px 20px;
+  padding: 0px 24px;
 }
-.project-img {
-  margin-bottom: 20px;
+.project-card {
+  padding: 20px 0px;
 }
 .flex-portfolio {
   display: flex;
